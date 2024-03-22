@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .el--1{
+            background-color:rgb(225, 9, 225);
+            align-self: flex-start;
+            /* flex-grow: 1; */
+        }
+
+        .el--2{
+            background-color:rgb(255, 94, 1);
+            align-self: stretch;
+            order: 1;
+            /* flex-grow: 3; */
+        }
+
+        .el--3{
+            background-color:green;
+            align-self: stretch;
+            /* flex-grow: 2; */
+        }
+
+        .el--4{
+            background-color:orange;
+            order:-1;
+            /* flex-grow: 3; */
+        }
+
+        .el--5{
+            background-color:pink;
+            height: 350px;
+        }
+
+        .el--6{
+            background-color:blue;
+        }
+
+        .el--7{
+            background-color:yellow;
+        }
+
+        .el--8{
+            background-color:crimson;
+
+        }
+
+        .container {
+            font-family: sans-serif;
+            background-color: #ddd;
+            margin: 40px;
+            font-size: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* height: 200.333px; */
+            padding:10px;
+            /* box-sizing: border-box; */
+            gap: 10px;
+            margin-right: 49px;
+        }
+
+        .el{
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto; */
+            /* flex-basis: 100px; */
+            /* flex-shrink: 0; */
+            /* flex-grow: 1; */
+            flex: 0 0 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="el el--1">HTML</div>
+        <div class="el el--3">CSS</div>
+        <div class="el el--4">are</div>
+        <div class="el el--5">amazing</div>
+        <div class="el el--6">Languages</div>
+        <div class="el el--7">to</div>
+        <div class="el el--8">learn</div>
+    </div>
+</body>
+</html>
